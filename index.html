@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend Quiz</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="left-section">
+      <h1>Welcome to the</h1>
+      <h1>Frontend Quiz!</h1>
+      <p>Pick a subject to get started.</p>
+    </div>
+    <div class="right-section">
+      <div class="toggle">
+        <span><i class="fa-regular fa-sun"></i></span>
+        <label class="switch">
+          <input type="checkbox" id="darkModeToggle">
+          <span class="slider round"></span>
+        </label>
+        <span><i class="fa-regular fa-moon fa-flip-horizontal"></i></span>
+      </div>
+      <button class="quiz-btn" onclick="startQuiz('HTML')">
+        <span class="icon"><i class="fa-solid fa-code" style="color: #e6a23c;"></i></span> HTML
+      </button>
+      <button class="quiz-btn" onclick="startQuiz('CSS')">
+        <span class="icon"><i class="fa-solid fa-brush fa-flip-horizontal" style="color: #34c759;"></i></span> CSS
+      </button>
+      <button class="quiz-btn" onclick="startQuiz('JavaScript')">
+        <span class="icon"><i class="fa-brands fa-js" style="color: #4285f4;"></i></span> Javascript
+      </button>
+      <button class="quiz-btn" onclick="startQuiz('Accessibility')">
+        <span class="icon"><i class="fa-solid fa-universal-access" style="color: #b86bff;"></i></span> Accessibility
+      </button>
+    </div>
+    <div id="quiz-container"></div>
+  <script src="script.js"></script>
+</body>
+</html>
